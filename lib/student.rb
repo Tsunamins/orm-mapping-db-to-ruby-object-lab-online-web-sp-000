@@ -61,6 +61,7 @@ end
     DB[:conn].execute(sql).map do |row| 
       self.new_from_db(row, grade)
   end 
+end
   
   def save
     sql = <<-SQL
